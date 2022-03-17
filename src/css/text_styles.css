@@ -1,0 +1,76 @@
+h1 {
+    font-size: 2em;
+    font-family: serif;
+    font-style: normal;
+    width: 90%;
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 2px 2px 10px #536E73;
+}
+h2 {
+    color: white;
+    text-shadow: #536E73;
+}
+.item_add {
+    color:#536E73;
+}
+.comment_item p {
+    line-height: 1.5em;
+    font-weight: bolder;
+    color: #536E73;
+}
+#credo {
+    font-size: 1.1em;
+    font-family: serif;
+    width: 60%;
+    margin: 5% auto 5% auto;
+    text-shadow: 2px 2px 8px #536E73;
+}
+h3 {
+    color: #536E73;
+    text-shadow: none;
+}
+.about_title {
+    color: #536E73;
+    white-space: pre-wrap;
+    font-size: 1.2em;
+    width: 80%;
+    margin: 10px auto 10px auto;
+}
+.about_text {
+    font-family: serif;
+    font-size: 1em;
+    width: 75%;
+    margin: 10px auto 10px auto;
+}
+#contacts {
+    font-family: serif;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contacts h2 {
+    color: #536E73;
+}
+#contacts_info {
+    text-decoration: underline #536E73;
+    font-style: italic;
+}
+.load_block, #last_words {
+    text-align: center;
+    font-family: serif;
+    width: 40%;
+    margin-left: auto;
+    background-color: white;
+    margin-right: auto;
+    font-style: italic;
+    font-weight: bolder;
+}
+.load_block {
+    color: #536E73;
+    background: none;
+}
+blockquote {
+    font-style: italic;
+}

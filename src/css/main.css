@@ -1,0 +1,174 @@
+#header_style {
+    color: white;
+    width: 60%;
+    margin: 10px auto 10px auto;
+    padding: 10px 5% 10px 5%;
+    background-color: #66DDF2;
+    box-shadow: 2px 2px 8px black;
+    text-align: center;
+    white-space: nowrap;
+}
+header, main, body {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+body {
+    font-size: 3vmin;
+    color: #50AFBF;
+    background-color: #536E73;
+}
+.longbarstyle {
+    width: 100%;
+    margin-left: 0px;
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 0px 10px 0px;
+    background-color: #B0EAF4;
+    box-shadow: 2px 2px 8px black;
+}
+.navigation {
+    font-size: 1.5em;
+    font-family: serif;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    align-content: center;
+    align-self: center;
+}
+.nav_element {
+    display: inline-flex;
+    text-decoration: none;
+    color: #50AFBF;
+}
+.nav_element:hover {
+    background-color: #536E73;
+}
+.current_nav_element {
+    display: inline-flex;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+}
+.items_board, .items_form {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 2% 10px 2%;
+    background-color: #66DDF2;
+    box-shadow: 2px 2px 8px black;
+    overflow: hidden;
+    font-size: 0.75rem;
+}
+.item ul {
+    display: block;
+    align-content: center;
+}
+.item {
+    display: inline-block;
+    width: 30vmax;
+    height: 250px;
+    margin: 10px 2% 10px 2%;
+    /*padding: 10px 10px 10px 10px;*/
+    background-color: #B0EAF4;
+    box-shadow: 1px 1px 3px #536E73;
+    overflow: hidden;
+}
+#airV1 {
+    background-image: url(img/air_bubles.jpg);
+    background-size: cover;
+}
+#airV2 {
+    background-image: url(img/air_alps.jpg);
+    background-size: cover;
+}
+#airV2p {
+    background-image: url(img/air_alps_plus.jpg);
+    background-size: cover;
+}
+#airV3 {
+    background-image: url(img/air_ocean.jpg);
+    background-size: cover;
+}
+#airV4 {
+    background-image: url(img/air_nature.jpg);
+    background-size: cover;
+}
+#airV5 {
+    background-image: url(img/air_dream.jpg);
+    background-size: cover;
+}
+#airSV1 {
+    background-image: url(img/air_subsc_classic.jpg);
+    background-size: cover;
+}
+#airSV2 {
+    background-image: url(img/air_subsc_alps.jpg);
+    background-size: cover;
+}
+#airSV3 {
+    background-image: url(img/air_subsc_ocean.jpg);
+    background-size: cover;
+}
+.item_title {
+    display: block;
+    float: left;
+    position: relative;
+    width: 34%;
+    height: 100%;
+    margin-bottom: 0px;
+    padding: 10px 5% 10px 5%;
+    background-color: #B0EAF4;
+    box-shadow: 2px 0px 10px #B0EAF4;
+}
+.item_var {
+    display: inline-block;
+    align-items: flex-start;
+    visibility: visible;
+    width: 35%;
+    min-height: 30px;
+    border-radius: 3px;
+    background-color: #B0EAF4;
+    padding: 2% 2% 2% 2%;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.img_box {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-self: center;
+    overflow: hidden;
+    border-radius: 100px;
+    box-shadow: 0 0 5px #536E73;
+    margin: 5% auto 5% auto;
+}
+.img_box img {
+    width: 100%; 
+}
+#comments {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 10px 2% 10px 2%;
+}
+.comment_item, .tmp_comment_item {
+    color: white;
+    margin: 5% 10% 5% 10%;
+    padding: 5% 5% 5% 5%;
+    background-color: #66DDF2;
+    box-shadow: 2px 2px 8px black;
+}
+.close_button {
+    text-align: center;
+    font-family: serif;
+    color:#50AFBF;
+    box-shadow: none;
+    border: none;
+    margin-left: 10px;
+    background-color: white;
+}
