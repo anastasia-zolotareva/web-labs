@@ -117,10 +117,10 @@ window.addEventListener('load', () => {
 function loadApplications() {
     var applications = JSON.parse(localStorage.getItem('applItem'));
     var curAppl = "";
-    for(var i = 0; i < restoredFruits.queue.length; i++) {
-        curAppl += '<div id="' + Application.queue[i].id 
-        + 'class="comment_item">' + Application.queue[i].name + ':'
-        + restoredFruits.queue[i].description + '</div>';
+    for(var i = 0; i < application.queue.length; i++) {
+        curAppl += '<div id="' + application.queue[i].id 
+        + 'class="comment_item">' + application.queue[i].name + ':'
+        + application.queue[i].description + '</div>';
     }
     document.getElementsByClassName("tmp_comment_item").innerHTML= curAppl;
 }

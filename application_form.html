@@ -37,15 +37,14 @@
                 <form name="search">
                     <input class="application_form" id="userName" type="text" minlength=1 maxlength=90 name="key" placeholder="Введите имя"></input>
                     <input class="application_form" id="applDescription" type="text" minlength=1 maxlength=120 name="key" placeholder="Введите заказ"></input>
-                    <input type="button" value="apply" onclick="apply"/>
-                    <input type="button" value="load" onclick="loadApplications"/>
-                    <input type="button" value="clear" onclick="clearApplications"/>
+                    <button value="apply" onclick="apply()">Apply</button>
+                    <button value="load" onclick="loadApplications()">Load</button>
+                    <button value="clear" onclick="clearApplications()">Clear</button>
                 </form>
             </div>
             <div class="items_board">
                 <template class="tmp_comment_item">
                     <div class="comment_item">
-                        <button class="button" value="remove application" onclick="deleteApplication(this)"></button>
                     </div>
                 </template>
             </div>
