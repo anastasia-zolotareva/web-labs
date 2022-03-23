@@ -1,4 +1,4 @@
-function saveChanges() {
+/* function saveChanges() {
     var array = document.getElementsByClassName("comment_item");
     var size = array.length;
     var applInfo = [];
@@ -44,7 +44,7 @@ window.addEventListener('load', () => {
         printBlock.appendChild(clone);
     }
     saveChanges();
-});
+}); 
 
 function apply() {
     var array = document.getElementsByClassName("items_board");
@@ -74,4 +74,64 @@ function loadApplications() {
         alert("Заявки отсутствуют");
     }
     saveChanges();
+} */
+
+var Application = {
+    queue:
+    []
+}
+
+function saveChanges() {
+    var array = document.getElementsByClassName("comment_item");
+    var size = array.length;
+    var applInfo = [];
+    for (let i = 0; i < size; i++) {
+        applInfo[i] = array[i]['innerText'];
+    }
+    localStorage.setItem('applItem', JSON.stringify(applInfo));
+}
+
+function clearApplications() {
+    var array = document.getElementsByClassName("comment_item");
+    while (array.length > 0) {
+        array[0].remove();
+    }
+    saveChanges();
+}
+
+window.addEventListener('load', () => {
+    var applInfo = JSON.parse(localStorage.getItem('applItem'));
+    clearApplications();
+    for (let i = 0; i < applInfo.length; i++) {
+        value = applInfo[i];
+        const curElement = document.getElementsByClassName("tmp_items_board");
+        var clone = curElement.content.cloneNode(true);
+        clone.querySelector[0].textContent = value;
+        
+        var printBlock = document.getElementsByClassName("items_board");
+        printBlock.appendChild(clone);
+    }
+    saveChanges();
+}); 
+
+function loadApplications() {
+    var applications = JSON.parse(localStorage.getItem('applItem'));
+    var curAppl = "";
+    for(var i = 0; i < restoredFruits.queue.length; i++) {
+        curAppl += '<div id="' + Application.queue[i].id 
+        + 'class="comment_item">' + Application.queue[i].name + ':'
+        + restoredFruits.queue[i].description + '</div>';
+    }
+    document.getElementsByClassName("tmp_comment_item").innerHTML= curAppl;
+}
+
+function apply() {
+    var applications = JSON.parse(localStorage.getItem('applItem'));
+    applications.queue.push({
+        id: Math.floor(Math.random() * (100 - 1 + 1)) + 1,
+        name: $('userName').val(),
+        description: $('applDescription').val()
+    });
+    localStorage.setItem('applItem', JSON.stringify(Application));
+    loadApplications();
 }
