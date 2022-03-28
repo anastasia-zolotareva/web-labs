@@ -3,13 +3,14 @@
     <head>
         <link rel="stylesheet" href="src/css/main.css">
         <link rel="stylesheet" href="src/css/text_styles.css">
-        <title>AirShop Comments</title>
+        <title>AirShop</title>
         <meta charset="utf-8">
         <meta name="keywords" content="воздух, свежий воздух, купить">
         <meta name="description" content="Купить самый качественный и свежий воздух">
         <script src="src/js/style.js"></script>
         <script src="src/js/navigation_scr.js"></script>
         <script src="src/js/loading_scr.js"></script>
+        <script src="src/js/account.js"></script>
     </head>
     <body>
         <header>
@@ -32,15 +33,20 @@
             </section>
         </header>
         <main>
-            <section id="comments">
-                <article class="comment_item">
-                    <h2>5/5 лучший воздух!</h2>
-                    <p>Покупать одначно стоит! Лучшее, чтобы помочь себе не задохнуться в городской среде.</p>
-                </article>
-                <article class="comment_item">
-                    <h2>Покупай для здоровья себя и своих близких</h2>
-                    <p>Врачи рекомендуют дышать качественным воздухом. Он гарантия долголетия вас и ваших близких</p>
-                </article>
+            <section class="items_board">
+                <form name="search" onsubmit="showAccount(); return false;">
+                    <input id="userId" type="text" minlength=1 maxlength=90 name="key" placeholder="Введите id"></input>
+                    <input type="submit" value="Войти" onclick="loadPage()"></input> 
+                </form>
+                <div class="preloader hide">
+                    <img src="img/480px-Loader.gif">
+                </div>
+                <section class="user_info hide">
+
+                </section>
+                <div class="warning hide">
+                    <h3>Что-то пошло не так</h3>
+                </div>
             </section>
         </main>
         <footer class="longbarstyle footer">

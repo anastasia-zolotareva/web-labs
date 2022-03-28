@@ -1,7 +1,7 @@
 (function() {
     start_t = (new Date).getTime();
     window.addEventListener('load', function() {
-        page_load = "Page was loaded in " + (((new Date).getDate() - start_t) / 1000) + "seconds";
+        page_load = "Page was loaded in " + (((new Date).getTime() - start_t) / 1000) + "seconds";
         console.log(page_load);
 
         var load_block = document.createElement("div");

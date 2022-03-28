@@ -28,25 +28,22 @@
                     <a href="aboutus.html" class="nav_element">О компании</a>
                     <a href="comments.html" class="nav_element">Отзывы</a>
                     <a href="application_form.html" class="nav_element">Оставить заявку</a>
+                    <a href="account.html" class="nav_element">Личный кабинет</a>
                 </nav>
             </section>
         </header>
         <main>
             <div class="items_form">
                 <h3>Вы можете оставить заявку здесь</h3>
-                <form name="search">
+                <form name="search" onsubmit="onSubmitFunction(); return false">
                     <input class="application_form" id="userName" type="text" minlength=1 maxlength=90 name="key" placeholder="Введите имя"></input>
                     <input class="application_form" id="applDescription" type="text" minlength=1 maxlength=120 name="key" placeholder="Введите заказ"></input>
-                    <button value="apply" onclick="apply()">Apply</button>
-                    <button value="load" onclick="loadApplications()">Load</button>
-                    <button value="clear" onclick="clearApplications()">Clear</button>
+                    <input type="submit" value="apply" onclick="apply()"/>
+                    <input type="button" value="clear" onclick="clearApplications()"/>
                 </form>
             </div>
             <div class="items_board">
-                <template class="tmp_comment_item">
-                    <div class="comment_item">
-                    </div>
-                </template>
+                <h3>Заявок нет</h3>
             </div>
         </main>
         <footer class="longbarstyle footer">
