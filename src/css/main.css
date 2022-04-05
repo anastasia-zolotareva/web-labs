@@ -30,7 +30,7 @@ body {
 .navigation {
     font-size: 1.5em;
     font-family: serif;
-    width: 70%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -38,15 +38,17 @@ body {
     align-self: center;
 }
 .nav_element {
-    display: inline-flex;
+    display: inline-block;
     text-decoration: none;
     color: #50AFBF;
+    margin-right: 10px;
+    margin-right: 10px;
 }
 .nav_element:hover {
     background-color: #536E73;
 }
 .current_nav_element {
-    display: inline-flex;
+    display: inline-block;
     text-decoration: none;
     padding-left: 10px;
     padding-right: 10px;
