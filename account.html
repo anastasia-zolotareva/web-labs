@@ -12,27 +12,55 @@
         <script src="src/js/account.js"></script>
     </head>
     <body>
-        <header>
-            <section id="header_style">
-                <h1>Магазин воздуха</h1>
-                <section id="credo">
-                    <blockquote>Купи, чтобы дышать</blockquote>
-                </section>
+        <header class="header">
+            <section class="longbarstyle" id="header_style">
+                <div id="page_title">
+                    <h1>Магазин воздуха</h1>
+                    <div id="credo">
+                        <blockquote>Купи, чтобы дышать</blockquote>
+                    </div>
+                </div>
+                <div id="user_nav">
+                    <a href="shopping_bag.html" class="user_nav_element any_user_nav_element">
+                        <img src="src/img/shopping_bag.png">
+                    </a>
+                    <a href="account.html" class="user_nav_element any_user_nav_element">
+                        <img src="src/img/user_icon.png">
+                    </a>
+                </div>
             </section>
             <section class="longbarstyle nav_section">
                 <nav class="navigation">
-                    <a href="index.html" class="nav_element">Главная</a>
-                    <a href=catalog_items.html class="nav_element">Товары</a>
-                    <a href=catalog_offers.html class="nav_element">Специальные предложения</a>
-                    <a href="aboutus.html" class="nav_element">О компании</a>
-                    <a href="comments.html" class="nav_element">Отзывы</a>
-                    <a href="application_form.html" class="nav_element">Оставить заявку</a>
-                    <a href="account.html" class="nav_element">Личный кабинет</a>
+                    <a href="index.html" class="nav_element any_nav_element">Главная</a>
+                    <a href=catalog_items.html class="nav_element any_nav_element">Товары</a>
+                    <a href=catalog_offers.html class="nav_element any_nav_element">Специальные предложения</a>
+                    <a href="aboutus.html" class="nav_element any_nav_element">О компании</a>
+                    <a href="comments.html" class="nav_element any_nav_element">Отзывы</a>
                 </nav>
             </section>
         </header>
         <main>
-            <section class="items_board">
+            <section class="user_singin">
+                <form name="search" onsubmit="singIn(); return false;">
+                    <input id="userId" type="text" minlength=1 maxlength=90 name="key" placeholder="Введите id"></input>
+                    <input id="userPassword" type="text" minlength=1 maxlength=90 name="key" placeholder="Введите пароль"></input>
+                    <input id="user_singin" type="submit" value="Войти"></input>
+                    <input id="user_singout" class="hide" type="button" value="Выйти" onclick="singOut()"></input>
+                </form>
+                <div class="preloader hide">
+                    <img src="src/img/480px-Loader.gif">
+                </div>
+                <section class="user_info hide">
+
+                </section>
+                <div class="warning hide">
+                    <h3>Что-то пошло не так</h3>
+                </div>
+            </section>
+            <section class="items_board hide">
+
+            </section>
+            <!-- <section class="items_board">
                 <form name="search" onsubmit="showAccount(); return false;">
                     <input id="userId" type="text" minlength=1 maxlength=90 name="key" placeholder="Введите id"></input>
                     <input type="submit" value="Войти" onclick="loadPage()"></input> 
@@ -46,7 +74,7 @@
                 <div class="warning hide">
                     <h3>Что-то пошло не так</h3>
                 </div>
-            </section>
+            </section> -->
         </main>
         <footer class="longbarstyle footer">
             <section id="contacts">

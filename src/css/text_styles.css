@@ -1,12 +1,16 @@
 h1 {
+    border-radius: 0 0 40vmin 0;
+    background-color: white;
+    text-align: left;
     font-size: 2em;
     font-family: serif;
     font-style: normal;
     width: 90%;
     white-space: nowrap;
-    margin-left: auto;
-    margin-right: auto;
-    text-shadow: 2px 2px 10px #536E73;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0;
+    padding: 2% 5% 2% 5%;
 }
 h2 {
     color: white;
@@ -21,11 +25,15 @@ h2 {
     color: #536E73;
 }
 #credo {
+    text-align: left;
     font-size: 1.1em;
     font-family: serif;
-    width: 60%;
-    margin: 5% auto 5% auto;
-    text-shadow: 2px 2px 8px #536E73;
+    width: 70%;
+    /* margin: 5% auto 5% auto; */
+    padding: 2% 5% 2% 5%;
+    border-radius: 0 0 50vmin 0;
+    background-color: white;
+    margin: 0;
 }
 h3 {
     color: #536E73;
@@ -72,5 +80,7 @@ h3 {
     background: none;
 }
 blockquote {
+    margin: 0;
+    width: 100%;
     font-style: italic;
 }

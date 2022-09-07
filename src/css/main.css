@@ -1,13 +1,54 @@
-#header_style {
-    color: white;
+#page_title {
+    display: flex;
+    flex-direction: column;
     width: 60%;
-    margin: 10px auto 10px auto;
-    padding: 10px 5% 10px 5%;
-    background-color: #66DDF2;
-    box-shadow: 2px 2px 8px black;
-    text-align: center;
-    white-space: nowrap;
+    justify-content: center;
+    margin: 0;
+    /* border-radius: 30% 70% / 120px;
+    background-color: white; */
 }
+#header_style {
+    padding-top: 0;
+    color:#50AFBF;
+    background-color: #B0EAF4;
+    margin-top: 0;
+    margin-bottom: 0;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#user_nav {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    padding: 1% 0 1% 0;
+}
+.user_nav_element {
+    width: 10vmin;
+    height: 10vmin;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0px 10px 0px 10px;
+}
+.user_nav_menu {
+    display: none;
+}
+.any_user_nav_element {
+    border: 2.5px solid #50AFBF;
+}
+.current_user_nav_element {
+    border: 2px solid white;
+}
+.user_nav_element img {
+    width: 80%;
+    height: 80%;
+    align-self: center;
+}
+
 header, main, body {
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
@@ -20,12 +61,15 @@ body {
 .longbarstyle {
     width: 100%;
     margin-left: 0px;
-    margin-left: 0px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-right: 0px;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
     padding: 10px 0px 10px 0px;
     background-color: #B0EAF4;
-    box-shadow: 2px 2px 8px black;
+    /* box-shadow: 2px 2px 8px black; */
+}
+.nav_section {
+    padding: 0;
 }
 .navigation {
     font-size: 1.5em;
@@ -33,47 +77,67 @@ body {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-    display: block;
+    display: flex;
+    justify-content: stretch;
     align-content: center;
     align-self: center;
 }
 .nav_element {
+    flex-grow: 1;
     display: inline-block;
     text-decoration: none;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    border-radius: 0.8vmin 0.8vmin 0% 0%;
+    /* margin-right: 10px;
+    margin-left: 10px; */
+}
+.any_nav_element {
     color: #50AFBF;
-    margin-right: 10px;
-    margin-right: 10px;
+}
+.current_nav_element {
+    color: white;
+    background-color: #536E73;
 }
 .nav_element:hover {
     background-color: #536E73;
-}
-.current_nav_element {
-    display: inline-block;
-    text-decoration: none;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: white;
+    opacity: 60%;
 }
 .items_board, .items_form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 10px;
     margin-bottom: 10px;
-    padding: 10px 2% 10px 2%;
-    background-color: #66DDF2;
-    box-shadow: 2px 2px 8px black;
+    /* padding: 10px 2% 10px 2%; */
+    /* background-color: #66DDF2; */
+    /* box-shadow: 2px 2px 8px black; */
     overflow: hidden;
     font-size: 0.75rem;
 }
-.item ul {
-    display: block;
-    align-content: center;
+.items_board ul {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0;
+    /* align-self: center; */
+    /* flex-direction: column;
+    align-content: space-around; */
+    /* justify-content: space-between; */
+    justify-content: center;
 }
 .item {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    /* display: inline-block; */
     width: 30vmax;
     height: 250px;
-    margin: 10px 2% 10px 2%;
+    margin: 2% 2% 2% 2%;
     /*padding: 10px 10px 10px 10px;*/
     background-color: #B0EAF4;
     box-shadow: 1px 1px 3px #536E73;
@@ -163,7 +227,7 @@ body {
     margin: 5% 10% 5% 10%;
     padding: 5% 5% 5% 5%;
     background-color: #66DDF2;
-    box-shadow: 2px 2px 8px black;
+    /* box-shadow: 2px 2px 8px black; */
 }
 .close_button {
     text-align: center;
@@ -176,4 +240,23 @@ body {
 }
 .hide {
     display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .nav_section {
+        display: block;
+        width: 40%;
+        position: absolute;
+        right: 0;
+    }
+    .nav_element {
+        border-radius: 0.8vmin;
+    }
+    .navigation {
+        flex-direction: column;
+    }
+    .user_nav_menu {
+        display: block;
+        align-self: center;
+    }
 }

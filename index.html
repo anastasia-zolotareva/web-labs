@@ -12,21 +12,32 @@
     </head>
     <body>
         <header class="header">
-            <section id="header_style">
-                <h1>Магазин воздуха</h1>
-                <section id="credo">
-                    <blockquote>Купи, чтобы дышать</blockquote>
-                </section>
+            <section class="longbarstyle" id="header_style">
+                <div id="page_title">
+                    <h1>Магазин воздуха</h1>
+                    <div id="credo">
+                        <blockquote>Купи, чтобы дышать</blockquote>
+                    </div>
+                </div>
+                <div id="user_nav">
+                    <a href="shopping_bag.html" class="user_nav_element any_user_nav_element">
+                        <img src="src/img/shopping_bag.png">
+                    </a>
+                    <a href="account.html" class="user_nav_element any_user_nav_element">
+                        <img src="src/img/user_icon.png">
+                    </a>
+                    <a href="javascript:void(0);" class="user_nav_element user_nav_menu" onclick="openMenu()">
+                        <img src="src/img/menu_icon.jpg">
+                    </a>
+                </div>
             </section>
             <section class="longbarstyle nav_section">
                 <nav class="navigation">
-                    <a href="index.html" class="nav_element">Главная</a>
-                    <a href=catalog_items.html class="nav_element">Товары</a>
-                    <a href=catalog_offers.html class="nav_element">Специальные предложения</a>
-                    <a href="aboutus.html" class="nav_element">О компании</a>
-                    <a href="comments.html" class="nav_element">Отзывы</a>
-                    <a href="application_form.html" class="nav_element">Оставить заявку</a>
-                    <a href="account.html" class="nav_element">Личный кабинет</a>
+                    <a href="index.html" class="nav_element any_nav_element">Главная</a>
+                    <a href=catalog_items.html class="nav_element any_nav_element">Товары</a>
+                    <a href=catalog_offers.html class="nav_element any_nav_element">Специальные предложения</a>
+                    <a href="aboutus.html" class="nav_element any_nav_element">О компании</a>
+                    <a href="comments.html" class="nav_element any_nav_element">Отзывы</a>
                 </nav>
             </section>
         </header>
@@ -37,14 +48,14 @@
                         <div class="item_title">
                             <h3>Основной каталог</h3>
                             <p>Большой выбор воздуха - найтите то, что понравится именно вам!</p>
-                            <a href="catalog_items.html" class="nav_element">Перейти к покупкам..</a>
+                            <a href="catalog_items.html" class="nav_element any_nav_element">Перейти к покупкам..</a>
                         </div>
                     </li>
                     <li class="item" id="airSV2">
                         <div class="item_title">
                             <h3>Специальные предложения</h3>
                             <p>Выгодные предложения - оформите подписку, чтобы экономить!</p>
-                            <a href="catalog_offers.html" class="nav_element">Перейти к покупкам..</a>
+                            <a href="catalog_offers.html" class="nav_element any_nav_element">Перейти к покупкам..</a>
                         </div>
                     </li>
                 </ul>
@@ -54,10 +65,10 @@
                 <section class="about_text">
                     <p>Мы не продаем воздух - мы продаем <em>воздух</em>!</p>
                     <p>Чтобы качественно жить нужно качественно дышать. Поэтому мы задумались над тем, чтобы каждый мог себе позволить дышать воздухом, гарантированно высокого качества.</p>
-                    <a href="aboutus.html" class="nav_element">Подробнее..</a>
+                    <a href="aboutus.html" class="nav_element any_nav_element">Подробнее..</a>
                 </section>
                 <div class="img_box">
-                    <img src="img/air.jpg">
+                    <img src="src/img/air.jpg">
                 </div>
             </section>
         </main>
