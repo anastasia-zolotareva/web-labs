@@ -238,6 +238,7 @@ async function loadUserCard(userUrl) {
         loadingProcessPresenter.hideAll();
     }
     catch(error) {
+        loadingProcessPresenter.hideAll();
         console.log("smth went wrong");
         console.log(error);
 
